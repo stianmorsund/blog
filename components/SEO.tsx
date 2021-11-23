@@ -22,7 +22,7 @@ const CommonSEO = ({ title, description, ogType, ogImage, twImage }: CommonSEOPr
   return (
     <Head>
       <title>{title}</title>
-      <meta name="robots" content="follow, index" />
+      <meta name="robots" content="noindex, nofollow" />
       <meta name="description" content={description} />
       <meta property="og:url" content={`${siteMetadata.siteUrl}${router.asPath}`} />
       <meta property="og:type" content={ogType} />
